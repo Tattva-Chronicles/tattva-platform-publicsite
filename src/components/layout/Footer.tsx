@@ -32,9 +32,9 @@ export function Footer() {
                 <div>
                     <h3 className="font-serif font-bold text-stone-100 mb-4">Pillars</h3>
                     <ul className="space-y-2">
-                        <li><Link href="/pillars#samvaad" className="hover:text-orange-500 transition-colors">Dharma-Samvaad</Link></li>
-                        <li><Link href="/pillars#seva" className="hover:text-orange-500 transition-colors">Seva-Sangathan</Link></li>
-                        <li><Link href="/pillars#raksha" className="hover:text-orange-500 transition-colors">Tattva-Raksha</Link></li>
+                        <li><Link href="/pillars/samvaad" className="hover:text-orange-500 transition-colors">Dharma-Samvaad</Link></li>
+                        <li><Link href="/pillars/seva" className="hover:text-orange-500 transition-colors">Seva-Sangathan</Link></li>
+                        <li><Link href="/pillars/raksha" className="hover:text-orange-500 transition-colors">Tattva-Raksha</Link></li>
                     </ul>
                 </div>
 

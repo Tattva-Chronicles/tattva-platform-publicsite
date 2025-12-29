@@ -117,12 +117,12 @@ export default function RakshaPage() {
                             <Link href="/donate">Support the Cause</Link>
                         </Button>
                         <Button variant="outline" size="lg" asChild>
-                            <Link href="/contact">Report an Issue</Link>
+                            <Link href="/contact">Join as a Protector</Link>
                         </Button>
                     </div>
 
                     <div className="bg-stone-900/80 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-                        <h3 className="text-lg font-bold text-white mb-4">Intel Briefings</h3>
+                        <h3 className="text-lg font-bold text-white mb-4">Subscribe for Updates</h3>
                         <SubscribeForm />
                     </div>
                 </div>

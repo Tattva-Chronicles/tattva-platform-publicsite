@@ -1,0 +1,41 @@
+name: CI/CD & DevSecOps
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  quality-guard:
+    name: Quality & Security Guard
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install Dependencies
+      run: npm ci
+
+    - name: Security Audit (DevSecOps)
+      # Fails if any high/critical vulnerabilities are found
+      run: npm audit --audit-level=high
+
+    - name: Lint Code
+      run: npm run lint
+
+    - name: Build Verification (Type Check)
+      run: npm run build
+      env:
+        # We don't need real keys for build check, just presence if checked at build time.
+        # But Next.js build typically requires them if used in getStatic/Server components.
+        # We'll use dummy values for CI build verification.
+        NEXT_PUBLIC_SUPABASE_URL: "https://ci-placeholder.supabase.co"
+        NEXT_PUBLIC_SUPABASE_KEY: "ci-placeholder-key"
