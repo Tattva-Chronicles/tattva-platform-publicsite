@@ -2,15 +2,30 @@ import { Metadata } from "next";
 import { Button } from "@/components/ui/Button";
 import { Check, Copy, Heart } from "lucide-react";
 import { SubscribeForm } from "@/components/ui/SubscribeForm";
+import { SITE_URL, Schema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-    title: "Donate | Tattva Platform",
-    description: "Support the development of the Tattva Platform ecosystem.",
+    title: "Donate",
+    description: "Support the development of the Tattva Platform ecosystem. Help us build sovereign digital infrastructure.",
+    openGraph: {
+        title: "Donate | Tattva Platform",
+        description: "Support the development of the Tattva Platform ecosystem.",
+        url: `${SITE_URL}/donate`,
+        images: [`${SITE_URL}/images/og-default.jpg`],
+    },
 };
 
 export default function DonatePage() {
     return (
         <main className="pt-24 pb-16 min-h-screen">
+            <Schema
+                type="WebPage"
+                data={{
+                    name: "Donate to Tattva Platform",
+                    description: "Support the development of the Tattva Platform ecosystem.",
+                    url: `${SITE_URL}/donate`,
+                }}
+            />
             <div className="container mx-auto px-4 max-w-3xl text-center">
                 <div className="mb-12">
                     <span className="inline-block p-4 rounded-full bg-orange-500/10 text-orange-500 mb-6">

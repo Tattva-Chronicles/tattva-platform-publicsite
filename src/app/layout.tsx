@@ -14,9 +14,43 @@ const merriweather = Merriweather({
   weight: ["300", "400", "700", "900"],
 });
 
+import { SITE_URL, defaultOpenGraph } from "@/lib/seo";
+
 export const metadata: Metadata = {
-  title: "Tattva Platform | Learn. Act. Defend.",
-  description: "A unified ecosystem for Sanatana Dharma. Learn with truth, Act with Dharma, Defend with honor.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Tattva Platform | Learn. Act. Defend.",
+    template: "%s | Tattva Platform",
+  },
+  description: "A unified ecosystem for Sanatana Dharma. Learn with truth (Samvaad), Act with service (Seva), and Defend with honor (Raksha).",
+  keywords: ["Sanatana Dharma", "Hinduism", "Tattva Platform", "ShastraDeep", "Seva", "Dharma", "Knowledge Engine"],
+  authors: [{ name: "Animesh Shaw" }],
+  creator: "Animesh Shaw",
+  publisher: "Tattva Platform",
+  openGraph: {
+    ...defaultOpenGraph,
+    title: "Tattva Platform | Learn. Act. Defend.",
+    description: "A unified ecosystem for Sanatana Dharma. Learn with truth, Act with service, and Defend with honor.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@TattvaChronicle",
+    creator: "@TattvaChronicle",
+    title: "Tattva Platform | Learn. Act. Defend.",
+    description: "A unified ecosystem for Sanatana Dharma.",
+    images: [`${SITE_URL}/images/og-default.jpg`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 import { Navbar } from "@/components/layout/Navbar";

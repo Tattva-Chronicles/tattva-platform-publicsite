@@ -2,15 +2,36 @@ import { Metadata } from "next";
 import { Github, Twitter, Linkedin, Instagram } from "lucide-react";
 import Link from "next/link";
 import { SubscribeForm } from "@/components/ui/SubscribeForm";
+import { SITE_URL, Schema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-    title: "The Builder | Tattva Platform",
-    description: "One developer's tapasya, a community's legacy.",
+    title: "The Builder",
+    description: "One developer's tapasya. Join Animesh Shaw in building the unified ecosystem.",
+    openGraph: {
+        title: "The Builder | Tattva Platform",
+        description: "One developer's tapasya. Join the movement.",
+        url: `${SITE_URL}/team`,
+        images: [`${SITE_URL}/images/og-default.jpg`],
+    },
 };
 
 export default function TeamPage() {
     return (
         <main className="pt-24 pb-16 min-h-screen">
+            <Schema
+                type="Person"
+                data={{
+                    name: "Animesh Shaw",
+                    jobTitle: "Founder & Lead Developer",
+                    url: `${SITE_URL}/team`,
+                    sameAs: [
+                        "https://github.com/AnimeshShaw",
+                        "https://twitter.com/TattvaChronicle",
+                        "https://www.linkedin.com/in/animeshshaw/",
+                        "https://www.instagram.com/animesh.infosec/"
+                    ],
+                }}
+            />
             <div className="container mx-auto px-4 max-w-4xl">
                 <div className="text-center mb-16">
                     <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6">One Developer's Tapasya</h1>

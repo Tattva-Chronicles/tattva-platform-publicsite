@@ -4,15 +4,30 @@ import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import Image from "next/image";
 import { SubscribeForm } from "@/components/ui/SubscribeForm";
+import { SITE_URL, Schema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-    title: "The Pillars | Tattva Chronicles",
-    description: "Deep dive into Samvaad, Seva, and Raksha.",
+    title: "The Pillars",
+    description: "Deep dive into the three pillars: Dharma-Samvaad (Learn), Seva-Sangathan (Act), and Tattva-Raksha (Defend).",
+    openGraph: {
+        title: "The Pillars | Tattva Platform",
+        description: "Deep dive into Dharma-Samvaad, Seva-Sangathan, and Tattva-Raksha.",
+        url: `${SITE_URL}/pillars`,
+        images: [`${SITE_URL}/images/pillar_samvaad.jpeg`], // Use one of the pillar images as preview
+    },
 };
 
 export default function PillarsPage() {
     return (
         <main className="pt-24 pb-16 min-h-screen">
+            <Schema
+                type="WebPage"
+                data={{
+                    name: "The Three Pillars of Tattva Platform",
+                    description: "Detailed overview of the Learn, Act, and Defend pillars of the Tattva Platform.",
+                    url: `${SITE_URL}/pillars`,
+                }}
+            />
             <div className="container mx-auto px-4">
                 <h1 className="font-serif text-4xl md:text-6xl font-bold text-center text-white mb-16">The Ecosystem</h1>
 

@@ -1,15 +1,35 @@
 import { Metadata } from "next";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { Mail, MapPin } from "lucide-react";
+import { SITE_URL, Schema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-    title: "Contact Us | Tattva Platform",
-    description: "Get in touch with the team.",
+    title: "Contact Us",
+    description: "Get in touch with the team. Join the community of Dharmic builders.",
+    openGraph: {
+        title: "Contact Us | Tattva Platform",
+        description: "Get in touch with the team. Join the community of Dharmic builders.",
+        url: `${SITE_URL}/contact`,
+        images: [`${SITE_URL}/images/og-default.jpg`],
+    },
 };
 
 export default function ContactPage() {
     return (
         <main className="pt-24 pb-16 min-h-screen">
+            <Schema
+                type="ContactPage"
+                data={{
+                    name: "Contact Tattva Platform",
+                    description: "Contact page for Tattva Platform. Reach out for volunteering or inquiries.",
+                    url: `${SITE_URL}/contact`,
+                    mainEntity: {
+                        "@type": "Organization",
+                        "name": "Tattva Platform",
+                        "email": "contact@tattvaplatform.com"
+                    }
+                }}
+            />
             <div className="container mx-auto px-4 max-w-5xl">
                 <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-8 text-center">Get in Touch</h1>
 

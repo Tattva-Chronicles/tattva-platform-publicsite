@@ -1,15 +1,42 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { SubscribeForm } from "@/components/ui/SubscribeForm";
+import { SITE_URL, Schema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-    title: "Vision | Tattva Chronicles",
-    description: "Our vision for a unified digital ecosystem for Sanatana Dharma.",
+    title: "Our Vision",
+    description: "Unifying Sanatana Dharma's digital presence. From fragments to a fortress.",
+    openGraph: {
+        title: "Our Vision | Tattva Platform",
+        description: "Unifying Sanatana Dharma's digital presence. From fragments to a fortress.",
+        url: `${SITE_URL}/vision`,
+        images: [`${SITE_URL}/images/og-default.png`],
+    },
 };
 
 export default function VisionPage() {
     return (
         <main className="pt-24 pb-16 min-h-screen">
+            <Schema
+                type="Article"
+                data={{
+                    headline: "Our Vision for a Unified Dharmic Ecosystem",
+                    description: "Unifying Sanatana Dharma's digital presence through Knowledge (Samvaad), Service (Seva), and Defense (Raksha).",
+                    author: {
+                        "@type": "Person",
+                        name: "Animesh Shaw",
+                    },
+                    publisher: {
+                        "@type": "Organization",
+                        name: "Tattva Platform",
+                        logo: {
+                            "@type": "ImageObject",
+                            url: `${SITE_URL}/images/og-default.jpg`,
+                        },
+                    },
+                    datePublished: "2025-12-01",
+                }}
+            />
             <div className="container mx-auto px-4 max-w-4xl">
                 <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6">Our Vision</h1>
                 <p className="text-xl text-stone-300 font-serif border-l-4 border-orange-500 pl-6 mb-12 italic">
