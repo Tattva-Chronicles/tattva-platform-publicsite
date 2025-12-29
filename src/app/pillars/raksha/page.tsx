@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Shield, Sword, Eye } from "lucide-react";
+import { Shield, Sword } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";

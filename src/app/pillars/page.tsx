@@ -39,7 +39,7 @@ export default function PillarsPage() {
                         </div>
                         <h2 className="text-3xl font-bold text-white mb-4">Dharma-Samvaad <span className="text-stone-500 text-lg font-normal ml-2">(Learn)</span></h2>
                         <p className="text-stone-300 text-lg leading-relaxed mb-6">
-                            A "Stack Overflow" for Sanatana Dharma. We are building a knowledge engine where answers are not ranked by popularity, but by <strong>scriptural validity (Pramāṇa)</strong>.
+                            A &quot;Stack Overflow&quot; for Sanatana Dharma. We are building a knowledge engine where answers are not ranked by popularity, but by <strong>scriptural validity (Pramāṇa)</strong>.
                         </p>
                         <ul className="space-y-2 text-stone-400 mb-8">
                             <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full" /> Verified Sources & Citations</li>
@@ -65,7 +65,7 @@ export default function PillarsPage() {
                         </div>
                         <h2 className="text-3xl font-bold text-white mb-4">Seva-Sangathan <span className="text-stone-500 text-lg font-normal ml-2">(Act)</span></h2>
                         <p className="text-stone-300 text-lg leading-relaxed mb-6">
-                            A "GitHub" for Civic Service. We coordinate real-world impact by connecting volunteers with local issues (cleaning, feeding, teaching) reported by the community.
+                            A &quot;GitHub&quot; for Civic Service. We coordinate real-world impact by connecting volunteers with local issues (cleaning, feeding, teaching) reported by the community.
                         </p>
                         <ul className="space-y-2 text-stone-400 mb-8">
                             <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 bg-green-500 rounded-full" /> Map-based Issue Reporting</li>
@@ -91,7 +91,7 @@ export default function PillarsPage() {
                         </div>
                         <h2 className="text-3xl font-bold text-white mb-4">Tattva-Raksha <span className="text-stone-500 text-lg font-normal ml-2">(Defend)</span></h2>
                         <p className="text-stone-300 text-lg leading-relaxed mb-6">
-                            A "Digital Defense Hub". We crowdsource rebuttals to misinformation using facts and logic, ensuring the Dharmic narrative is protected with dignity.
+                            A &quot;Digital Defense Hub&quot;. We crowdsource rebuttals to misinformation using facts and logic, ensuring the Dharmic narrative is protected with dignity.
                         </p>
                         <ul className="space-y-2 text-stone-400 mb-8">
                             <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 bg-red-500 rounded-full" /> Bounty System for Misinformation</li>

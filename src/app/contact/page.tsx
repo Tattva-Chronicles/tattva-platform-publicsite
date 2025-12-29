@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ContactForm } from "@/components/ui/ContactForm";
-import { Mail, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 import { SITE_URL, Schema } from "@/lib/seo";
 
 export const metadata: Metadata = {

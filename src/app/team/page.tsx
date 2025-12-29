@@ -34,7 +34,7 @@ export default function TeamPage() {
             />
             <div className="container mx-auto px-4 max-w-4xl">
                 <div className="text-center mb-16">
-                    <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6">One Developer's Tapasya</h1>
+                    <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6">One Developer&apos;s Tapasya</h1>
                     <p className="text-xl text-stone-300 italic max-w-2xl mx-auto">
                         "I built the foundation. Now, I need you to help build the Temple."
                     </p>
@@ -57,6 +57,9 @@ export default function TeamPage() {
                                 In 2025, I launched <strong>ShastraDeep</strong> as a proof of concept.
                                 Now, I am scaling this vision into a unified ecosystem.
                                 But a single pair of hands can only do so much.
+                                I realized that digital sovereignty is not given, it is built.
+                                <br /><br />
+                                Tattva Platform is my contribution. I am building the &quot;Infrastructure of Dharma&quot;—open source, decentralized, and uncompromising.
                             </p>
                             <div className="flex gap-4 mt-6">
                                 <Link href="https://x.com/TattvaChronicle" target="_blank" rel="noopener noreferrer" className="text-stone-400 hover:text-orange-500 transition-colors">

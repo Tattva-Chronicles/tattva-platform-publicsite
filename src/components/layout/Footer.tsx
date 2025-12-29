@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Twitter, MessageCircle, Heart } from "lucide-react";
+import { Github, Twitter, Heart } from "lucide-react";
 import { ShareButton } from "@/components/ui/ShareButton";
 
 export function Footer() {

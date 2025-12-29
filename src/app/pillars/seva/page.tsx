@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Users, HandHeart, Map } from "lucide-react";
+import { Users, Map } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";

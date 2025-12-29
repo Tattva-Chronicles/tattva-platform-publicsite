@@ -16,17 +16,21 @@ export default function PrivacyPage() {
 
                 <div className="bg-stone-900 border border-white/5 rounded-2xl p-8 md:p-12 prose prose-invert prose-stone max-w-none">
                     <p className="lead text-xl text-stone-300">
-                        Tattva Platform ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our website and services.
+                        Tattva Platform (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our website and services.
                     </p>
 
                     <div className="my-8 h-px bg-white/10 w-full" />
 
                     <h3 className="text-white font-serif text-2xl mt-8 mb-4">1. Information We Collect</h3>
-                    <p>We collect information you provide directly to us, such as when you subscribe to our newsletter, fill out a contact form, or make a donation.</p>
-                    <ul className="list-disc pl-5 space-y-2 text-stone-300">
-                        <li><strong className="text-white">Personal Data:</strong> Name, Email address.</li>
-                        <li><strong className="text-white">Communication Data:</strong> Message content sent via contact forms.</li>
-                    </ul>
+                    <div className="text-stone-300 space-y-4">
+                        <p>
+                            We collect information you provide directly to us (such as when you subscribe or contact us) and automatically collected usage data. We do not sell your data. We use it only to operate the platform.
+                        </p>
+                        <ul className="list-disc pl-5 space-y-2 text-stone-300">
+                            <li><strong className="text-white">Personal Data:</strong> Name, Email address.</li>
+                            <li><strong className="text-white">Communication Data:</strong> Message content sent via contact forms.</li>
+                        </ul>
+                    </div>
 
                     <h3 className="text-white font-serif text-2xl mt-8 mb-4">2. How We Use Your Information</h3>
                     <p>We use the collected information to:</p>

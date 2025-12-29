@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { BookOpen, HeartHandshake, Shield, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/Button";
 
 const pillars = [
     {

@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import { SubscribeForm } from "@/components/ui/SubscribeForm";
 import { SITE_URL, Schema } from "@/lib/seo";
 

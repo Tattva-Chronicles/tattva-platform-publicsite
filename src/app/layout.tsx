@@ -56,6 +56,8 @@ export const metadata: Metadata = {
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -70,6 +72,7 @@ export default function RootLayout({
           "antialiased bg-stone-950 text-stone-100 min-h-screen font-sans selection:bg-orange-500/30 flex flex-col"
         )}
       >
+        <GoogleAnalytics />
         <Navbar />
         <div className="flex-grow">
           {children}

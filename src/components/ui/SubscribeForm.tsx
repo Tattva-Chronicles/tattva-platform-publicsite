@@ -49,7 +49,7 @@ export function SubscribeForm() {
                 </Button>
             </form>
             {status === "success" && (
-                <p className="text-green-400 text-sm mt-2">Thanks for subscribing! We'll keep you posted.</p>
+                <p className="text-green-400 text-sm mt-2">Thanks for subscribing! We&apos;ll keep you posted.</p>
             )}
             {status === "error" && (
                 <p className="text-red-400 text-sm mt-2">Something went wrong. Please try again.</p>

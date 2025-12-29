@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { BookOpen, Sparkles, Scroll } from "lucide-react";
+import { BookOpen, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
@@ -66,7 +66,7 @@ export default function SamvaadPage() {
                             For centuries, the knowledge of the Rishis was preserved not just in books, but in the living tradition of <span className="text-white">Samvaad</span>—dialogue rooted in truth.
                         </p>
                         <p className="text-lg text-stone-400 leading-relaxed">
-                            Today, the internet is flooded with half-truths. A simple search for "Karma" yields a million opinions but zero authority. We are drowning in information, yet starving for wisdom.
+                            Today, the internet is flooded with half-truths. A simple search for &quot;Karma&quot; yields a million opinions but zero authority. We are drowning in information, yet starving for wisdom.
                         </p>
                         <div className="pl-4 border-l-2 border-blue-500 italic text-stone-500">
                             How do we distinguish the Signal from the Noise?

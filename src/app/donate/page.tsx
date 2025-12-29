@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Button } from "@/components/ui/Button";
-import { Check, Copy, Heart } from "lucide-react";
+import { Copy, Heart } from "lucide-react";
 import { SubscribeForm } from "@/components/ui/SubscribeForm";
 import { SITE_URL, Schema } from "@/lib/seo";
 

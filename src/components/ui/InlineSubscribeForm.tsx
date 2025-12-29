@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/Button";
 import { supabase } from "@/lib/supabase";
 import { Loader2, Send } from "lucide-react";
 
@@ -34,7 +33,7 @@ export function InlineSubscribeForm() {
     };
 
     if (status === "success") {
-        return <p className="text-green-400 text-sm animate-fade-in">Thanks! You're on the list.</p>;
+        return <p className="text-green-400 text-sm animate-fade-in">Thanks! You&apos;re on the list.</p>;
     }
 
     return (

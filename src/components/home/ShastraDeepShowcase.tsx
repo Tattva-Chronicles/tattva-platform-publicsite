@@ -21,17 +21,16 @@ export function ShastraDeepShowcase() {
                     >
                         <div className="absolute -inset-4 bg-orange-500/10 blur-3xl rounded-full" />
                         <div className="relative bg-stone-950 border border-stone-800 rounded-2xl p-2 shadow-2xl">
-                            <div className="flex items-center gap-4 mb-2 px-4 py-2 border-b border-stone-800">
-                                <span className="w-3 h-3 rounded-full bg-red-500" />
-                                <span className="w-3 h-3 rounded-full bg-yellow-500" />
-                                <span className="w-3 h-3 rounded-full bg-green-500" />
-                                <div className="ml-auto px-3 py-1 bg-stone-900 rounded-full text-xs text-stone-500 font-mono">shastradeep.com</div>
-                            </div>
-                            <Slideshow />
-                            {/* Overlay Badge */}
-                            <div className="absolute -right-6 -bottom-6 bg-gradient-to-r from-orange-500 to-amber-600 px-6 py-3 rounded-xl shadow-lg transform rotate-3 z-20">
-                                <p className="font-bold text-white text-sm">Launched Dec 2025</p>
-                            </div>
+                            <h2 className="text-3xl md:text-5xl font-bold font-serif mb-6 text-white">The Engine: <span className="text-orange-500">ShastraDeep</span></h2>
+                            <p className="text-xl text-stone-300 mb-8 max-w-2xl mx-auto">
+                                Before we build the platform, we built the brain. ShastraDeep is the world&apos;s most advanced Dharmic AI model.
+                            </p>            <span className="w-3 h-3 rounded-full bg-green-500" />
+                            <div className="ml-auto px-3 py-1 bg-stone-900 rounded-full text-xs text-stone-500 font-mono">shastradeep.com</div>
+                        </div>
+                        <Slideshow />
+                        {/* Overlay Badge */}
+                        <div className="absolute -right-6 -bottom-6 bg-gradient-to-r from-orange-500 to-amber-600 px-6 py-3 rounded-xl shadow-lg transform rotate-3 z-20">
+                            <p className="font-bold text-white text-sm">Launched Dec 2025</p>
                         </div>
                     </motion.div>
 
@@ -43,10 +42,11 @@ export function ShastraDeepShowcase() {
                         className="md:w-1/2"
                     >
                         <h2 className="font-serif text-3xl md:text-5xl font-bold text-white mb-6">
-                            Proof of Work: <span className="text-orange-500">ShastraDeep</span>
+                            A &quot;Google&quot; for Shastras. <span className="text-orange-400">Search 10,000+ texts</span> with semantic understanding.
+                            Ask: &quot;What does the Gita say about Duty?&quot; and get citations, not opinions.
                         </h2>
                         <p className="text-xl text-stone-300 mb-8 leading-relaxed">
-                            We don't just dream; we build. In 2025, we successfully launched <strong>ShastraDeep</strong> — a research-oriented digital library for Sanātana Dharma.
+                            We don&apos;t just dream; we build. In 2025, we successfully launched <strong>ShastraDeep</strong> — a research-oriented digital library for Sanātana Dharma.
                         </p>
 
                         <ul className="space-y-4 mb-10">
