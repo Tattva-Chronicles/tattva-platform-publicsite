@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { BookOpen, Users, Shield } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import Image from "next/image";
 import { SubscribeForm } from "@/components/ui/SubscribeForm";
 
 export const metadata: Metadata = {
@@ -31,8 +32,13 @@ export default function PillarsPage() {
                             <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full" /> Multi-lingual Knowledge Graph</li>
                         </ul>
                     </div>
-                    <div className="md:w-1/2 bg-stone-900 border border-white/5 rounded-2xl p-8 aspect-video flex items-center justify-center">
-                        <span className="text-stone-600 font-mono">UI Preview / Screenshot Placeholder</span>
+                    <div className="md:w-1/2 bg-stone-900/50 border border-white/5 rounded-2xl overflow-hidden aspect-video relative group">
+                        <Image
+                            src="/images/pillar_samvaad.jpeg"
+                            alt="Dharma-Samvaad UI Screenshot"
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
                     </div>
                 </section>
 
@@ -52,8 +58,13 @@ export default function PillarsPage() {
                             <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 bg-green-500 rounded-full" /> Earn Seva Points & Badges</li>
                         </ul>
                     </div>
-                    <div className="md:w-1/2 bg-stone-900 border border-white/5 rounded-2xl p-8 aspect-video flex items-center justify-center">
-                        <span className="text-stone-600 font-mono">UI Preview / Screenshot Placeholder</span>
+                    <div className="md:w-1/2 bg-stone-900/50 border border-white/5 rounded-2xl overflow-hidden aspect-video relative group">
+                        <Image
+                            src="/images/pillar_seva.jpg"
+                            alt="Seva-Sangathan UI Screenshot"
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
                     </div>
                 </section>
 
@@ -73,8 +84,13 @@ export default function PillarsPage() {
                             <li className="flex gap-2 items-center"><span className="w-1.5 h-1.5 bg-red-500 rounded-full" /> Acharya Verification</li>
                         </ul>
                     </div>
-                    <div className="md:w-1/2 bg-stone-900 border border-white/5 rounded-2xl p-8 aspect-video flex items-center justify-center">
-                        <span className="text-stone-600 font-mono">UI Preview / Screenshot Placeholder</span>
+                    <div className="md:w-1/2 bg-stone-900/50 border border-white/5 rounded-2xl overflow-hidden aspect-video relative group">
+                        <Image
+                            src="/images/pillar_raksha.jpg"
+                            alt="Tattva-Raksha UI Screenshot"
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
                     </div>
                 </section>
 

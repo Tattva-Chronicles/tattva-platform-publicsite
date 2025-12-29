@@ -48,5 +48,16 @@ src/
 
 ## Pending Actions
 *   **Deploy**: Push to Vercel/Netlify.
-*   **Env Vars**: Ensure `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_KEY` are set in the deployment dashboard.
 *   **Assets**: Pillar images are still placeholders (generation service outage).
+
+## Deployment Instructions
+1.  **Vercel/Netlify**: Import your new GitHub repository.
+2.  **Environment Variables**: Add these in your project settings:
+    *   `NEXT_PUBLIC_SUPABASE_URL`
+    *   `NEXT_PUBLIC_SUPABASE_KEY`
+3.  **Deploy**: Click deploy. The site is static-ready and optimized.
+
+## Handling Missing Assets
+The `Pillars` section currently uses CSS placeholders. When you have the final UI mockups/screenshots:
+1.  Place them in `public/images/`.
+2.  Edit `src/components/home/Pillars.tsx` to replace the `<div className="...Placeholder..."/>` with `<Image src="..." />`.

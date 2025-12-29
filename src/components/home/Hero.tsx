@@ -73,7 +73,7 @@ export function Hero() {
                     className="mt-8 w-full"
                 >
                     <InlineSubscribeForm />
-                    <p className="text-stone-500 text-xs mt-2">Join 200+ waiting for the next update.</p>
+                    <p className="text-stone-500 text-xs mt-2">Join us waiting for the next update.</p>
                 </motion.div>
             </div>
         </section>
