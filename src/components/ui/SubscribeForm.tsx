@@ -34,7 +34,7 @@ export function SubscribeForm() {
     };
 
     return (
-        <div className="w-full max-w-sm">
+        <div className="w-full">
             <form onSubmit={handleSubmit} className="flex gap-2">
                 <input
                     type="email"
