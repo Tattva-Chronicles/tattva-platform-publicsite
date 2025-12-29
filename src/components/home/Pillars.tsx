@@ -15,7 +15,7 @@ const pillars = [
         color: "text-blue-400",
         gradient: "from-blue-500/20 to-blue-500/0",
         border: "group-hover:border-blue-500/50",
-        link: "/pillars#samvaad"
+        link: "/pillars/samvaad"
     },
     {
         id: "seva",
@@ -26,7 +26,7 @@ const pillars = [
         color: "text-green-400",
         gradient: "from-green-500/20 to-green-500/0",
         border: "group-hover:border-green-500/50",
-        link: "/pillars#seva"
+        link: "/pillars/seva"
     },
     {
         id: "raksha",
@@ -38,7 +38,7 @@ const pillars = [
         color: "text-red-400",
         gradient: "from-red-500/20 to-red-500/0",
         border: "group-hover:border-red-500/50",
-        link: "/pillars#raksha"
+        link: "/pillars/raksha"
     }
 ];
 
@@ -85,6 +85,7 @@ export function Pillars() {
                                     Learn more <ArrowRight className="ml-2 w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                                 </div>
                             </div>
+                            <Link href={pillar.link} className="absolute inset-0 z-20" aria-label={`Learn more about ${pillar.title}`} />
                         </motion.div>
                     ))}
                 </div>
