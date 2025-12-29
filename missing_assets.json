@@ -1,0 +1,17 @@
+[
+    {
+        "id": "samvaad",
+        "title": "Dharma-Samvaad",
+        "image": "/images/samvaad_placeholder.jpg"
+    },
+    {
+        "id": "seva",
+        "title": "Seva-Sangathan",
+        "image": "/images/seva_placeholder.jpg"
+    },
+    {
+        "id": "raksha",
+        "title": "Tattva-Raksha",
+        "image": "/images/raksha_placeholder.jpg"
+    }
+]
