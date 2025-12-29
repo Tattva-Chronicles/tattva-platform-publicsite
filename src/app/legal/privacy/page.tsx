@@ -40,7 +40,7 @@ export default function PrivacyPage() {
                     <p>We implement reasonable security measures (including Supabase RLS and SSL) to protect your personal information. However, no internet transmission is completely secure.</p>
 
                     <h3 className="text-white font-serif text-2xl mt-8 mb-4">4. Contact Us</h3>
-                    <p>If you have questions about this policy, please contact us at <a href="mailto:contact@tattvaplatform.com" className="text-orange-400 hover:text-orange-300">contact@tattvaplatform.com</a>.</p>
+                    <p>If you have questions about this policy, please contact us at <a href="mailto:contact@tattvaplatform.org" className="text-orange-400 hover:text-orange-300">contact@tattvaplatform.org</a>.</p>
                 </div>
             </div>
         </main>

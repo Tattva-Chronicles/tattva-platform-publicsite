@@ -53,7 +53,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="text-white font-bold mb-1">Email Us</h3>
-                                    <p className="text-stone-400 text-sm">contact@tattvaplatform.com</p>
+                                    <p className="text-stone-400 text-sm">contact@tattvaplatform.org</p>
                                     <p className="text-xs text-stone-500 mt-1">(Response time: 24-48 hours)</p>
                                 </div>
                             </div>
